@@ -1,0 +1,301 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    font-family: 'Courier New', Courier, monospace;
+   
+}
+body{
+    line-height: 30px;
+    font-size: 1.5rem;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    color: #ffff;
+}
+.logo span{
+    font-size: 30px;
+    font-weight: 700;
+    border: 1px solid #f7b035;
+    padding: 5px;
+    border-radius: 15px;
+    color: #f7b035;
+}
+.navigation {
+    font-family: 'Bree Serif', serif;
+    font-size: 20px;
+    display: flex;
+}
+
+.header_area {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    z-index: 9;
+    padding: 20px 0;
+}
+.hero_area {
+        background: #121619;
+        padding: 80px 0 30px;
+        position: relative;
+        z-index: 1;
+        display: flex;
+}
+.hero_area:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/chef-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+}
+.hero_area .container{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero_text {
+    position: relative;
+    z-index: 1;
+}
+.hero_image {
+    position: relative;
+    z-index: 1;
+}
+.hero_title {
+    line-height: 75px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 70px;
+    font-family: 'Rubik', sans-serif;
+}
+.order_promo_box {
+    padding: 5px;
+    position: relative;
+    margin-top: 30px;
+}
+.promo_order_text {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 30px;
+    width: 45%;
+}
+.order_promo_box img{
+    border-radius: 15px;
+}
+.promo_order_text h2 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-family: 'Delius Unicase', cursive;
+}
+ 
+.best_pizza_area {
+    background: #FFF8EF;
+    position: relative;
+    padding: 10px 0;
+    margin: 20px 0;
+}
+.best_pizza_left{
+    padding: 15px;
+}
+.best_pizza_left h2 {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 65px;
+    color: #f7b035;
+    line-height: 70px;
+    letter-spacing: -0.05em;
+    margin-bottom: 30px;
+    font-family: 'Delius Unicase', cursive;
+}
+.best_pizza_left h2 span {
+    display: block;
+    color: #000;
+    font-size: 40%;
+    font-weight: 500;
+    line-height: 0.85em;
+    letter-spacing: 0em;
+}
+.pizza_items_area{
+    text-align: center;
+}
+.pizza_items_area .row{
+   flex-wrap: wrap;
+}
+.pizza_item {
+    width: 250px;
+    text-align: center;
+    padding: 25px;
+    border: 1px solid #e2e2e2;
+    background: #fff;
+    border-radius: 10px;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    margin-bottom: 30px;
+    margin: 25px 64px 30px 0;
+}
+.sub_title {
+    color: #f7b035;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-family: 'Delius Unicase', cursive;
+}
+.section_title {
+    font-weight: 700;
+    font-size: 44px;
+    font-family: 'Rubik', sans-serif;
+    line-height: 56px;
+}
+.pizza_item_text h3 {
+    font-weight: 700;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+.pizza_slide_price {
+    color: #f7b035;
+    font-family: 'Delius Unicase', cursive;
+    font-size: 28px !important;
+    margin-bottom: 0 !important;
+    font-weight: 700;
+}
+.subscribe_area {
+    background: #f7b035;
+    position: relative;
+}
+.subscribe_area .container{
+    text-align: center;
+    padding: 10px;
+}
+.subscribe_area .site_heading {
+    position: relative;
+    margin-bottom: 30px;
+}
+.subscribe_area .sub_title, .subscribe_area .section_title{
+    color: #fff;
+}
+.subscribe_area .site_heading {
+    position: relative;
+    margin-bottom: 30px;
+}
+.subscribe_box form {
+    position: relative;
+    background: #fff;
+    border-radius: 40px;
+    height: 60px;
+}
+.subscribe_box form input {
+    position: absolute;
+    top: 0;
+    width: 80%;
+    left: 0;
+    height: 100%;
+    padding: 5px 30px;
+    background: transparent;
+    border: none;
+    border-radius: 40px;
+}
+.subscribe_box form button {
+    position: absolute;
+    right: 10px;
+    height: 75%;
+    padding: 5px 20px;
+    background: #f7b035;
+    border: none;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border-radius: 30px;
+    width: 20%;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: 'Rubik', sans-serif;
+}
+.footer{
+  text-align: center;
+}
+.footer_top{
+    margin: 20px 0;
+    padding: 25px 0;
+}
+.footer ul{
+    display: flex;
+    justify-content: center;
+}
+.footer_bottom {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.05);
+    padding: 20px 0;
+}
+.copyright p {
+    font-size: 15px;
+    color: #999;
+}
+/* #####Tags##### */
+li{
+    list-style: none;
+    padding: 0 10px;
+}
+img{
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+/* #### utilities ### */
+.col-md-6{
+    width: 50%;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+.btn{
+    display: inline-block;
+    padding: 13px 30px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    overflow: hidden;
+    background: #f7b035;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.row {
+    display: flex;
+    align-items: center;
+}
+.container{
+    width: 70%;
+    margin: auto;
+}
+.text-end {
+    text-align: right!important;
+}
