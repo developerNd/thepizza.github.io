@@ -1,301 +1,397 @@
 *{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
-html{
-    font-size: 10px;
-    font-family: 'Courier New', Courier, monospace;
-   
-}
-body{
-    line-height: 30px;
-    font-size: 1.5rem;
-}
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 50%;
-    margin: auto;
-    color: #ffff;
-}
-.logo span{
-    font-size: 30px;
-    font-weight: 700;
-    border: 1px solid #f7b035;
-    padding: 5px;
-    border-radius: 15px;
-    color: #f7b035;
-}
-.navigation {
-    font-family: 'Bree Serif', serif;
-    font-size: 20px;
-    display: flex;
-}
-
-.header_area {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    left: 0;
-    z-index: 9;
-    padding: 20px 0;
-}
-.hero_area {
-        background: #121619;
-        padding: 80px 0 30px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    html{
+        font-size: 10px;
+        font-family: 'Courier New', Courier, monospace;
+       
+    }
+    body{
+        line-height: 3rem;
+        font-size: 1.5rem;
+    }
+    
+    /* ## Header section  ## */
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 85%;
+        margin: auto;
+        color: #ffff;
+    }
+    .logo span{
+        font-size: 4rem;
+        font-weight: 700;
+        border: 0.1rem solid #f7b035;
+        padding: 0.5rem;
+        border-radius: 1.5rem;
+        color: #f7b035;
+    }
+    .navigation {
+        font-family: 'Bree Serif', serif;
+        font-size: 2.5rem;
+        display: flex;
+    }
+    
+    .header_area {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        left: 0;
+        z-index: 9;
+        padding: 2rem 0;
+    }
+    
+    
+    /* ##Hero section ##  */
+    .hero_area {
+            background: #121619;
+            padding: 8rem 0 3rem;
+            position: relative;
+            z-index: 1;
+            display: flex;
+    }
+    .hero_area:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(assets/chef-bg.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0.3;
+    }
+    
+    .hero_text {
         position: relative;
         z-index: 1;
+    }
+    .hero_image {
+        position: relative;
+        z-index: 1;
+    }
+    .hero_title {
+        line-height: 8.5rem;
+        color: #fff;
+        font-weight: 700;
+        font-size: 10rem;
+        font-family: 'Rubik', sans-serif;
+        margin: 2rem;
+    }
+    
+    /* ##Order Promo section ##  */
+    .order_promo_box {
+        padding: 0.5rem;
+        position: relative;
+        margin-top: 3rem;
+    }
+    .promo_order_text {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        right: 3rem;
+        width: 45%;
+    }
+    .order_promo_box img{
+        border-radius: 1.5rem;
+    }
+    .promo_order_text h2 {
+        color: #fff;
+        font-weight: 700;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+        font-family: 'Delius Unicase', cursive;
+    }
+    
+     /* Best pizza section  */
+    .best_pizza_area {
+        background: #FFF8EF;
+        position: relative;
+        padding: 1rem 0;
+        margin: 3rem 0;
+    }
+    .best_pizza_left{
+        padding: 1.5rem;
+    }
+    .best_pizza_left h2 {
+        display: inline-block;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 6.5rem;
+        color: #f7b035;
+        line-height: 7rem;
+        letter-spacing: -0.05em;
+        margin-bottom: 3rem;
+        font-family: 'Delius Unicase', cursive;
+    }
+    .best_pizza_left h2 span {
+        display: block;
+        color: #000;
+        font-size: 40%;
+        font-weight: 500;
+        line-height: 0.85em;
+        letter-spacing: 0em;
+    }
+    
+    
+    /*## Pizza items section  ##*/
+    .pizza_items_area{
+        text-align: center;
+    }
+    .pizza_items_area .row{
+       flex-wrap: wrap;
+       justify-content: center;
+    }
+    .pizza_item {
+        width: 25rem;
+        text-align: center;
+        padding: 2.5rem;
+        border: 0.1rem solid #e2e2e2;
+        background: #fff;
+        border-radius: 1rem;
+        -webkit-transition: all 0.4s ease 0s;
+        transition: all 0.4s ease 0s;
+        margin-bottom: 3rem;
+        margin: 2.5rem 6.4rem 3rem 0;
+    }
+    .sub_title {
+        color: #f7b035;
+        font-weight: 700;
+        text-transform: capitalize;
+        font-size: 2.2rem;
+        margin-bottom: 1.5rem;
+        font-family: 'Delius Unicase', cursive;
+    }
+    .section_title {
+        font-weight: 700;
+        font-size: 4.4rem;
+        font-family: 'Rubik', sans-serif;
+        line-height: 5.6rem;
+    }
+    .pizza_item_text h3 {
+        font-weight: 700;
+        font-size: 2.1rem;
+        margin-bottom: 1.5rem;
+    }
+    .pizza_slide_price {
+        color: #f7b035;
+        font-family: 'Delius Unicase', cursive;
+        font-size: 2.8rem !important;
+        margin-bottom: 0 !important;
+        font-weight: 700;
+    }
+    
+    /*## Subscribe section ## */
+    .subscribe_area {
+        background: #f7b035;
+        position: relative;
+    }
+    .subscribe_area .container{
+        text-align: center;
+        padding: 1rem;
+    }
+    .subscribe_area .site_heading {
+        position: relative;
+        margin-bottom: 3rem;
+    }
+    .subscribe_area .sub_title, .subscribe_area .section_title{
+        color: #fff;
+    }
+    .subscribe_area .site_heading {
+        position: relative;
+        margin-bottom: 3rem;
+    }
+    .subscribe_box form {
+        position: relative;
+        background: #fff;
+        border-radius: 4rem;
+        height: 6rem;
+    }
+    .subscribe_box form input {
+        position: absolute;
+        top: 0;
+        width: 80%;
+        left: 0;
+        height: 100%;
+        padding: 0.5rem 3rem;
+        background: transparent;
+        border: none;
+        border-radius: 40px;
+        outline: none;
+    }
+    .subscribe_box form button {
+        position: absolute;
+        right: 1rem;
+        height: 75%;
+        padding: 0.5rem 2rem;
+        background: #f7b035;
+        border: none;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        border-radius: 3rem;
+        width: 20%;
+        color: #fff;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-family: 'Rubik', sans-serif;
+        font-size: 1.3rem;
+    }
+    
+    
+    /* ## Footer section ## */
+    .footer{
+      text-align: center;
+    }
+    .footer_top{
+        margin: 2rem 0;
+        padding: 2.5rem 0;
+    }
+    .footer ul{
         display: flex;
-}
-.hero_area:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(assets/chef-bg.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0.3;
-}
-.hero_area .container{
-    width: 70%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.hero_text {
-    position: relative;
-    z-index: 1;
-}
-.hero_image {
-    position: relative;
-    z-index: 1;
-}
-.hero_title {
-    line-height: 75px;
-    color: #fff;
-    font-weight: 700;
-    font-size: 70px;
-    font-family: 'Rubik', sans-serif;
-}
-.order_promo_box {
-    padding: 5px;
-    position: relative;
-    margin-top: 30px;
-}
-.promo_order_text {
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    right: 30px;
-    width: 45%;
-}
-.order_promo_box img{
-    border-radius: 15px;
-}
-.promo_order_text h2 {
-    color: #fff;
-    font-weight: 700;
-    font-size: 25px;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    font-family: 'Delius Unicase', cursive;
-}
- 
-.best_pizza_area {
-    background: #FFF8EF;
-    position: relative;
-    padding: 10px 0;
-    margin: 20px 0;
-}
-.best_pizza_left{
-    padding: 15px;
-}
-.best_pizza_left h2 {
-    display: inline-block;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 65px;
-    color: #f7b035;
-    line-height: 70px;
-    letter-spacing: -0.05em;
-    margin-bottom: 30px;
-    font-family: 'Delius Unicase', cursive;
-}
-.best_pizza_left h2 span {
-    display: block;
-    color: #000;
-    font-size: 40%;
-    font-weight: 500;
-    line-height: 0.85em;
-    letter-spacing: 0em;
-}
-.pizza_items_area{
-    text-align: center;
-}
-.pizza_items_area .row{
-   flex-wrap: wrap;
-}
-.pizza_item {
-    width: 250px;
-    text-align: center;
-    padding: 25px;
-    border: 1px solid #e2e2e2;
-    background: #fff;
-    border-radius: 10px;
-    -webkit-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s;
-    margin-bottom: 30px;
-    margin: 25px 64px 30px 0;
-}
-.sub_title {
-    color: #f7b035;
-    font-weight: 700;
-    text-transform: capitalize;
-    font-size: 22px;
-    margin-bottom: 15px;
-    font-family: 'Delius Unicase', cursive;
-}
-.section_title {
-    font-weight: 700;
-    font-size: 44px;
-    font-family: 'Rubik', sans-serif;
-    line-height: 56px;
-}
-.pizza_item_text h3 {
-    font-weight: 700;
-    font-size: 21px;
-    margin-bottom: 15px;
-}
-.pizza_slide_price {
-    color: #f7b035;
-    font-family: 'Delius Unicase', cursive;
-    font-size: 28px !important;
-    margin-bottom: 0 !important;
-    font-weight: 700;
-}
-.subscribe_area {
-    background: #f7b035;
-    position: relative;
-}
-.subscribe_area .container{
-    text-align: center;
-    padding: 10px;
-}
-.subscribe_area .site_heading {
-    position: relative;
-    margin-bottom: 30px;
-}
-.subscribe_area .sub_title, .subscribe_area .section_title{
-    color: #fff;
-}
-.subscribe_area .site_heading {
-    position: relative;
-    margin-bottom: 30px;
-}
-.subscribe_box form {
-    position: relative;
-    background: #fff;
-    border-radius: 40px;
-    height: 60px;
-}
-.subscribe_box form input {
-    position: absolute;
-    top: 0;
-    width: 80%;
-    left: 0;
-    height: 100%;
-    padding: 5px 30px;
-    background: transparent;
-    border: none;
-    border-radius: 40px;
-}
-.subscribe_box form button {
-    position: absolute;
-    right: 10px;
-    height: 75%;
-    padding: 5px 20px;
-    background: #f7b035;
-    border: none;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    border-radius: 30px;
-    width: 20%;
-    color: #fff;
-    font-weight: 500;
-    text-transform: uppercase;
-    font-family: 'Rubik', sans-serif;
-}
-.footer{
-  text-align: center;
-}
-.footer_top{
-    margin: 20px 0;
-    padding: 25px 0;
-}
-.footer ul{
-    display: flex;
-    justify-content: center;
-}
-.footer_bottom {
-    text-align: center;
-    background: rgba(0, 0, 0, 0.05);
-    padding: 20px 0;
-}
-.copyright p {
-    font-size: 15px;
-    color: #999;
-}
-/* #####Tags##### */
-li{
-    list-style: none;
-    padding: 0 10px;
-}
-img{
-    vertical-align: middle;
-    width: 100%;
-    height: auto;
-}
-
-
-
-
-/* #### utilities ### */
-.col-md-6{
-    width: 50%;
-}
-.center{
-    display: flex;
-    align-items: center;
-    justify-self: center;
-}
-.btn{
-    display: inline-block;
-    padding: 13px 30px;
-    color: #fff;
-    font-weight: 500;
-    text-transform: uppercase;
-    overflow: hidden;
-    background: #f7b035;
-    border-radius: 40px;
-    cursor: pointer;
-}
-.row {
-    display: flex;
-    align-items: center;
-}
-.container{
-    width: 70%;
-    margin: auto;
-}
-.text-end {
-    text-align: right!important;
-}
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 2rem;
+        padding: 1.5rem 0;
+    }
+    .footer_bottom {
+        text-align: center;
+        background: rgba(0, 0, 0, 0.05);
+        padding: 2rem 0;
+    }
+    .copyright p {
+        font-size: 1.5rem;
+        color: #999;
+    }
+    
+    
+    
+    /* #####Selected by Tags##### */
+    li{
+        list-style: none;
+        padding: 0 1rem;
+        cursor: pointer;
+    }
+    img{
+        vertical-align: middle;
+        width: 100%;
+        height: auto;
+    }
+    section{
+        margin: 0 0 1rem 0;
+    }
+    
+    
+    
+    /* #### utilities section ### */
+    .col-md-6{
+        width: 50%;
+    }
+    .center{
+        display: flex;
+        align-items: center;
+        justify-self: center;
+    }
+    .btn{
+        display: inline-block;
+        padding: 1.3rem 3rem;
+        color: #fff;
+        font-weight: 500;
+        text-transform: uppercase;
+        overflow: hidden;
+        background: #f7b035;
+        border-radius: 4rem;
+        cursor: pointer;
+    }
+    .row {
+        display: flex;
+        align-items: center;
+    }
+    .container{
+        width: 70%;
+        margin: auto;
+    }
+    .text-end {
+        text-align: right!important;
+    }
+    
+    
+    /* ###### Media Query### */
+    
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+        html{
+            font-size: 6px;
+        }
+        body{
+            line-height: normal;
+            font-size: 2rem;
+        }
+        .container{
+            width: 95%;
+        }
+        .navbar{
+            width: 95%;
+        }
+        .hero_title{
+            line-height: 5.5rem;
+            font-size: 5rem;
+        }
+        .pizza_item{
+            width: 40rem;
+            margin: 0 0.2rem 3rem 0.2rem;
+        }
+    
+    }
+    
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+        html{
+            font-size: 7px;
+        }
+        .hero_title{
+            line-height: 5.5rem;
+            font-size: 5rem;
+        }
+        .container{
+            width: 85%;
+        }
+        .pizza_item{
+            width: 30%;
+            margin: 0 0.4rem 2rem 0.4rem;
+        }
+    }
+    
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+        
+    }
+    
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+        html{
+           font-size: 10px;
+        }
+        .hero_title {
+            line-height: 6.5rem;
+            font-size: 6rem;
+        }
+        .container{
+            width: 70%;
+        }
+    }
+    
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+        html{
+            font-size:13px ;
+        }
+    }
