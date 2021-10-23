@@ -119,7 +119,12 @@
         margin: 3rem 0;
     }
     .best_pizza_left{
+        padding: 1.5rem; 
+        width: 60%; 
+    }
+    .best_pizza_right{
         padding: 1.5rem;
+        width: 40%;  
     }
     .best_pizza_left h2 {
         display: inline-block;
